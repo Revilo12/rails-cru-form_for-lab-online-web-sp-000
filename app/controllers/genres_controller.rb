@@ -17,6 +17,11 @@ class GenresController < ApplicationController
     set_genre
   end
 
+  def update
+    set_genre
+    @genre.update(params.require(:genre).permit(:name))
+  end
+  
   private
 
   def set_genre
