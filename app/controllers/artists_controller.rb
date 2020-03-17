@@ -12,6 +12,10 @@ class ArtistsController < ApplicationController
     redirect_to artist_path(@artist)
   end
 
+  def edit
+    set_artist
+  end
+
   private
 
   def set_artist
