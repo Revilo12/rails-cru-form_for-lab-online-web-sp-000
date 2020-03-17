@@ -4,6 +4,10 @@ class GenresController < ApplicationController
     set_genre
   end
 
+  def new
+    @genre = Genre.new
+  end
+
   private
 
   def set_genre
