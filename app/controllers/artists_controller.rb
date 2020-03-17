@@ -3,6 +3,10 @@ class ArtistsController < ApplicationController
     set_artist
   end
 
+  def new
+    @artist = Artist.new
+  end
+
   private
 
   def set_artist
