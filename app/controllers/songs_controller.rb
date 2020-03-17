@@ -4,10 +4,10 @@ class SongsController < ApplicationController
     set_song
   end
 
-  def new 
+  def new
     @song = Song.new
   end
-  
+
   private
 
   def set_song
