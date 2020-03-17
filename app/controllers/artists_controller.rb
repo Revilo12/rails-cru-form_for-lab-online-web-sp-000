@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def show
-
+    set_artist
   end
 
   private
