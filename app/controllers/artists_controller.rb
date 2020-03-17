@@ -19,7 +19,7 @@ class ArtistsController < ApplicationController
   def update
     set_artist
     @artist.update(params.require(:artist).permit(:name, :bio))
-    redirect_to artist_path(artist)
+    redirect_to artist_path(@artist)
   end
 
   private
