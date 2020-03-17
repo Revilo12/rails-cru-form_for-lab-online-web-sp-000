@@ -13,6 +13,10 @@ class SongsController < ApplicationController
     redirect_to song_path(@song)
   end
 
+  def edit
+    set_song
+  end
+
   private
 
   def set_song
