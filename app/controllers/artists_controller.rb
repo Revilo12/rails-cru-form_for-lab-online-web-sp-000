@@ -1,9 +1,9 @@
 class ArtistsController < ApplicationController
   def show
-    
+
   end
 
-  private 
+  private
 
   def set_artist
     @artist = Artist.find(params[:id])
