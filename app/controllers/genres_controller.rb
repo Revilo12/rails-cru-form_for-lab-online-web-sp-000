@@ -13,6 +13,10 @@ class GenresController < ApplicationController
     redirect_to genre_path(@genre)
   end
 
+  def edit
+    set_genre
+  end
+
   private
 
   def set_genre
